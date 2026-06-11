@@ -48,6 +48,7 @@ import { DateService } from '../../core/date/date.service';
 import { UserProfileButtonComponent } from '../../features/user-profile/user-profile-button/user-profile-button.component';
 import { FocusButtonComponent } from './focus-button/focus-button.component';
 import { UserProfileService } from '../../features/user-profile/user-profile.service';
+import { getTitleAndSubject } from 'src/app/core/parser/eml-parser.service';
 
 @Component({
   selector: 'main-header',
@@ -313,6 +314,21 @@ export class MainHeaderComponent implements OnDestroy {
       this.sync();
     } else {
       this.setupSync();
+    }
+  }
+  async onDrop(ev: DragEvent): Promise<void> {
+    ev.preventDefault();
+    ev.stopPropagation();
+
+    const file = ev.dataTransfer?.files[0];
+    if (file === undefined) return;
+
+    // Parse eml to get title and text
+    try {
+      const { from, subject } = await getTitleAndSubject(file);
+      this.taskService.add(from + '\n' + subject);
+    } catch (e) {
+      console.error('Couldnt upload eml');
     }
   }
 
