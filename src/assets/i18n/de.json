@@ -330,7 +330,7 @@
       "GO_TO_PROCRASTINATION": "Hilfe bei Prokrastination erhalten",
       "GOGOGO": "Los, los, los!!!",
       "LONG_BREAK": "Lange Pause",
-      "LONG_BREAK_TITLE": "Lange Pause - Zyklus {{cycle}}",
+      "LONG_BREAK_TITLE": "Lange Pause",
       "ON": "An",
       "OVERTIME_MSG": "Die Zeit ist um — mach eine Pause, wenn du bereit bist",
       "OPEN_ISSUE_IN_BROWSER": "Issue im Browser öffnen",
@@ -369,7 +369,7 @@
       "SELECT_TASK_TO_FOCUS": "Aufgabe zum Fokussieren auswählen",
       "SESSION_COMPLETED": "Fokussitzung abgeschlossen!",
       "SHORT_BREAK": "Kurze Pause",
-      "SHORT_BREAK_TITLE": "Kurze Pause - Zyklus {{cycle}}",
+      "SHORT_BREAK_TITLE": "Kurze Pause",
       "SHOW_HIDE_NOTES_AND_ATTACHMENTS": "Aufgabennotizen und Anhänge ein-/ausblenden",
       "SKIP_BREAK": "Pause überspringen",
       "START_BREAK": "Pause starten",
@@ -1813,8 +1813,8 @@
         "SNOOZE_ALL": "Alle schlummern lassen",
         "START": "Start",
         "TASK_REMINDERS": "Aufgaben-Erinnerungen",
-        "UNSCHEDULE": "Ablegen",
-        "UNSCHEDULE_ALL": "Alle ablegen"
+        "UNSCHEDULE": "Planung aufheben",
+        "UNSCHEDULE_ALL": "Alle Planungen aufheben"
       },
       "D_SCHEDULE_TASK": {
         "INFO_OUTSIDE_WORK_HOURS": "Falls outside your configured work hours.",
